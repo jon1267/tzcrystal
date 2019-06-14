@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Product form{% endblock %}
+
+{% block header %}
+    {{ include('site/partials/phone_email_line.html.twig') }}
+{% endblock %}
+
+{% block content %}
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row bg-white p-5 contact-form">
+            <div class="col-md-6">
+            {{ form_start(product_form,
+                {'attr': {'id': 'custom_form_id', 'class': 'custom_form_class'}})
+            }}
+                {{ form(product_form) }}
+            {{ form_end(product_form) }}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Minishop - Symfony 4 Home{% endblock %}
+
+{% block header %}
+    {{ include('site/partials/phone_email_line.html.twig') }}
+    {{ include('site/partials/nav.html.twig') }}
+{% endblock %}
+
+{% block content %}
+    {{ include('site/home/home_slider.html.twig') }}
+    {{ include('site/home/free_shipping.html.twig') }}
+    {{ include('site/home/new_shoes.html.twig') }}
+    {{ include('site/home/mens_collections.html.twig') }}
+    {{ include('site/home/blue_shoes.html.twig') }}
+    {{ include('site/home/customers.html.twig') }}
+    {{ include('site/home/follow_us.html.twig') }}
+{% endblock %}
+
+{% block footer %}
+    {{ include('site/partials/footer.html.twig') }}
+{% endblock %}
